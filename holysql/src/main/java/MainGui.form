@@ -28,8 +28,9 @@
           </grid>
         </constraints>
         <properties>
+          <editable value="false"/>
           <horizontalAlignment value="0"/>
-          <text value="说出你的诉求，凡人"/>
+          <text value="把你的东西复制到剪贴板，然后"/>
         </properties>
       </component>
     </children>
