@@ -35,6 +35,9 @@ public class MainGui {
                 String[] parameters = null;
                 for (String line : lines) {
                     if (line.contains(p)) {
+                        if (line.endsWith("?")){
+                            line = line + " ";
+                        }
                         psql = line.split(p)[line.split(p).length - 1].split("\\?");
                     } else if (line.contains(ps)) {
                         parameters = line.split(ps)[line.split(ps).length - 1].split("\\), ");
