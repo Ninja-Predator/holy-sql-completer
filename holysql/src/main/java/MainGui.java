@@ -102,7 +102,7 @@ public class MainGui {
                     }
                     parameter = parameters[i].substring(0, parameters[i].indexOf('('));
                     if (parameters[i].substring(parameters[i].indexOf('(')).contains("String")) {
-                        parameter = '"' + parameter + '"';
+                        parameter = '\'' + parameter + '\'';
                     }
                     finalSql.append(parameter).append(psql[i + 1]);
                 }
